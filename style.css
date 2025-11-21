@@ -1,8 +1,35 @@
-body{
-background-image: url('img/home/home.png');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-height: 100vh;
-margin: 0;
+/* ImgHome/Font */
+body {
+    font-family        : 'Montserrat', sans-serif;
+    background-image   : url('img/home/home.png');
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+    height             : 100vh;
+    margin             : 0;
+}
+
+/* Centrar */
+.cntr {
+    min-height: calc(600px - 70px);
+}
+
+/* Banner */
+.banner-bg {
+    background-image   : url('img/banner/Image.png');
+    background-size    : cover;
+    background-position: center;
+    min-height         : 400px;
+}
+
+.banner-title {
+    max-width   : 800px;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.banner-text {
+    max-width   : 600px;
+    margin-left : auto;
+    margin-right: auto;
 }
