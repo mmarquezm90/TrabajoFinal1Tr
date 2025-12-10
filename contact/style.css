@@ -1,20 +1,16 @@
-/* ImgHome/Font */
 body {
-    font-family        : 'Montserrat', sans-serif;
-    background-image   : url('img/home/home.png');
-    background-size    : cover;
-    background-repeat  : no-repeat;
-    background-position: center;
-    height             : 100vh;
-    margin             : 0;
+    font-family   : 'Montserrat', sans-serif;
+    display       : flex;
+    flex-direction: column;
+    min-height    : 100vh;
 }
 
-/* Centrar */
-.cntr {
-    min-height: calc(600px - 70px);
-}
 
 /*Footer*/
+footer {
+    margin-top: auto;
+}
+
 .footer-custom {
     padding: 30px 0;
 }
@@ -53,4 +49,16 @@ body {
     text-decoration : none;
     box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.2);
     display         : none;
+}
+
+/*Contact*/
+form {
+    background-color: #ffffff;
+    padding         : 20px;
+    border-radius   : 8px;
+    color           : #f1f1f1;
+}
+
+label {
+    color: #000000;
 }
