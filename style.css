@@ -1,33 +1,51 @@
-/* ImgHome/Font */
+/* Fuente + Imagen de fondo */
 body {
-    font-family        : 'Montserrat', sans-serif;
-    background-image   : url('img/home/home.png');
-    background-size    : cover;
-    background-repeat  : no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('img/home/home.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    height             : 100vh;
-    margin             : 0;
+    margin: 0;
+    min-height: 100vh;    /* CORREGIDO: antes height */
 }
 
-/* Centrar */
+/* Overlay oscuro para que se lea el texto */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 0;
+}
+
+/* Centrar contenido del HERO */
 .cntr {
-    min-height: calc(600px - 70px);
+    position: relative;
+    z-index: 1; /* para estar por encima del overlay */
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-/*Footer*/
+/* Footer */
 .footer-custom {
     padding: 30px 0;
+    position: relative;
+    z-index: 1; /* para no quedar detrás del overlay */
+    background: #111;
 }
 
 .footer-social-link {
-    color          : #fff;
+    color: #fff;
     text-decoration: none;
-    margin-left    : 15px;
-    display        : inline-flex;
-    flex-direction : column;
-    align-items    : center;
-    font-size      : 0.9rem;
-    transition     : color 0.3s;
+    margin-left: 15px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+    transition: color 0.3s;
 }
 
 .footer-social-link:hover {
@@ -35,22 +53,23 @@ body {
 }
 
 .footer-social-link .bi {
-    font-size    : 1.2rem;
+    font-size: 1.2rem;
     margin-bottom: 2px;
 }
 
+/* Botón “Back to top” */
 .back-to-top {
-    position        : fixed;
-    bottom          : 20px;
-    right           : 20px;
-    width           : 40px;
-    height          : 40px;
-    border-radius   : 4px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
     background-color: #333;
-    color           : white;
-    text-align      : center;
-    line-height     : 40px;
-    text-decoration : none;
-    box-shadow      : 0 2px 5px rgba(0, 0, 0, 0.2);
-    display         : none;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
 }
