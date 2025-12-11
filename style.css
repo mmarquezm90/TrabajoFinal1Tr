@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     margin: 0;
-    min-height: 100vh;    /* CORREGIDO: antes height */
+    min-height: 100vh;
 }
 
 /* Overlay oscuro para que se lea el texto */
@@ -24,7 +24,7 @@ body::before {
 /* Centrar contenido del HERO */
 .cntr {
     position: relative;
-    z-index: 1; /* para estar por encima del overlay */
+    z-index: 1;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -33,7 +33,7 @@ body::before {
 .footer-custom {
     padding: 30px 0;
     position: relative;
-    z-index: 1; /* para no quedar detrás del overlay */
+    z-index: 1;
     background: #111;
 }
 
@@ -73,3 +73,4 @@ body::before {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: none;
 }
+
