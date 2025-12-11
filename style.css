@@ -1,12 +1,7 @@
 /* Fuente + Imagen de fondo */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-image: url('img/home/home.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-    min-height: 100vh;
+    background: url('img/home/home.png') no-repeat center center fixed !important;
+    background-size: cover !important;
 }
 
 /* Overlay oscuro para que se lea el texto */
@@ -73,4 +68,5 @@ body::before {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: none;
 }
+
 
