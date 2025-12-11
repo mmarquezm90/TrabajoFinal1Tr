@@ -14,11 +14,17 @@
 <body>
 
   <!--NavBar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-    <a class="navbar-brand" href="#"><img src="img/home/title.png" class="img-fluid" alt="Responsive image"
-        width="300px"></a>
-    <div class="collapse navbar-collapse homerigh d-flex justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent px-4">
+    <a class="navbar-brand" href="#">
+      <img src="img/home/title.png" class="img-fluid" alt="Logo" width="300">
+    </a>
+
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link text-white" href="news/news.html">News</a>
         </li>
@@ -30,7 +36,7 @@
   </nav>
   <!--EndNavBar-->
 
-  <!--CenterText-->
+  <!--CenterText (Hero)-->
   <div class="container d-flex flex-column justify-content-center align-items-center text-center text-white cntr">
     <h1 class="display-5 fw-bold mb-3 z-1">Inspiration for travel by real people</h1>
     <p class="lead mb-4 z-1">Book smart, travel simple</p>
@@ -38,36 +44,42 @@
   </div>
 
   <!--FOOTER-->
-  <footer class="bg-dark text-light footer-custom">
+  <footer class="bg-dark text-light footer-custom py-3">
     <div class="container">
       <div class="row d-flex justify-content-between align-items-center">
 
+        <!-- IZQUIERDA -->
         <div class="col-md-6 mb-3 mb-md-0">
-          <p class="mb-0">Designed & Developed by **XP DESIGN**</p>
+          <p class="mb-0">Designed & Developed by <strong>XP DESIGN</strong></p>
         </div>
 
-        <div class="col-md-6 d-flex justify-content-end align-items-center">
+        <!-- DERECHA -->
+        <div class="col-md-6 d-flex justify-content-end align-items-center gap-3">
 
-          <a href="#" class="footer-social-link">
-            <i class="bi bi-facebook"></i>
-            <span class="count text-small">70K</span>
+          <a href="#" class="footer-social-link text-light d-flex align-items-center gap-1">
+            <i class="bi bi-facebook"></i><span>70K</span>
           </a>
 
-          <a href="#" class="footer-social-link">
-            <i class="bi bi-twitter"></i>
-            <span class="count text-small">40</span>
+          <a href="#" class="footer-social-link text-light d-flex align-items-center gap-1">
+            <i class="bi bi-twitter"></i><span>40</span>
           </a>
 
-          <a href="#" class="footer-social-link">
-            <i class="bi bi-instagram"></i>
-            <span class="count text-small">13K</span>
+          <a href="#" class="footer-social-link text-light d-flex align-items-center gap-1">
+            <i class="bi bi-instagram"></i><span>13K</span>
           </a>
 
-          <a href="#" class="footer-social-link">
-            <i class="bi bi-pinterest"></i>
-            <span class="count text-small">168K</span>
+          <a href="#" class="footer-social-link text-light d-flex align-items-center gap-1">
+            <i class="bi bi-pinterest"></i><span>168K</span>
           </a>
+
+        </div>
+
+      </div>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
